@@ -1,11 +1,14 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f5f0;
     color: #333;
+    text-align: center;
 }
 
+/* Header & Navigation */
 header {
     display: flex;
     justify-content: space-between;
@@ -31,11 +34,32 @@ nav a {
     font-weight: 500;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
+/* Hero Section */
+.hero {
+    background: url('images/art1.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
+.hero h1 {
+    font-size: 3rem;
+}
+
+.cta-button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Gallery Section */
 .art-grid {
     display: flex;
     justify-content: center;
@@ -46,10 +70,66 @@ section {
     width: 200px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Shop Section */
+.shop-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+}
+
+.buy-button {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
-    text-align: center;
+    margin-top: 20px;
     padding: 20px;
     background: #fff;
     box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
